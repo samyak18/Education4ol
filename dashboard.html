@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div id="userDetails">
+            <h2>Bank Details</h2>
+            <p id="bankName"></p>
+            <p id="accountNumber"></p>
+            <p id="ifscCode"></p>
+        </div>
+        <div id="feeDetails">
+            <h2>Pending Fees</h2>
+            <p id="pendingFees"></p>
+            <button id="payNowButton">Pay Now</button>
+        </div>
+        <div id="paymentForm" style="display: none;">
+            <h2>Make a Payment</h2>
+            <form id="payForm">
+                <input type="text" id="inputAccountNumber" placeholder="Account Number" required>
+                <input type="number" id="inputAmount" placeholder="Amount" required>
+                <input type="text" id="inputBankName" placeholder="Bank Name" required>
+                <input type="text" id="inputIfscCode" placeholder="IFSC Code" required>
+                <button type="submit">Make Payment</button>
+            </form>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
